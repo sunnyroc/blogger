@@ -1,0 +1,193 @@
+#cyberchimps_navbar {
+	
+        .navbar {
+		background-color: #59c1d7;
+		margin-bottom: 0;
+		border-radius: 2px;
+                border:1px solid #3caec6;
+                min-height:40px;
+        }
+}
+.navbar .navbar-brand{
+    background-color: #3caec6;
+    margin:0;
+}
+.navbar-nav{
+  margin-top:0;
+  margin-bottom:0;
+}
+.navbar-collapse.collapse.in {
+    padding-left: 15px;
+}
+.navbar-collapse.collapse {
+    padding-left: 0px;
+}
+#navbar .dropdown .dropdown-menu {
+    padding-left: 10px;
+}
+.menu-top-container .menu{
+ margin-left:auto;
+}
+.navbar-nav > li > .dropdown-menu{
+ min-width:100%;
+ border:none;
+}
+.navbar-nav > li > .dropdown-menu{
+ border-bottom-left-radius:0;
+ border-bottom-right-radius:0;
+}
+.menu-item{
+ list-style:outside none none;
+}
+.menu-item a {
+    color: #333;
+}
+#cyberchimps_navbar .navbar div > ul > li > a ,.navbar-brand{
+	color: #ffffff;
+        height: 38px;
+	padding-bottom: 0 !important;
+   	padding-top: 10px;
+        border-right: 1px solid #3caec6;
+        font-weight: 700;
+}
+
+#cyberchimps_navbar .navbar div > ul > li > a:hover {
+	background-color: #76d0e3;
+}
+
+#cyberchimps_navbar .navbar div > ul > li.active > a {
+	background-color: #76d0e3;
+}
+
+#cyberchimps_navbar .navbar div > ul > li > a .caret {
+      display:none;
+}
+
+#cyberchimps_navbar .navbar div > ul > li > ul {
+	border-radius: none;
+}
+
+#cyberchimps_navbar .navbar div > ul > li > ul:before {
+	content: '';
+	position: absolute;
+	top: -10px;
+	left: 10px;
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+}
+
+#cyberchimps_navbar .navbar div > ul > li > ul:after {
+	content: '';
+	position: absolute;
+	top: -9px;
+	left: 11px;
+	width: 0;
+	height: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+}
+
+#cyberchimps_navbar .navbar div > ul > li:hover > ul {
+	display: block;
+}
+
+#footer_menu {
+  padding: 20px 0 0;
+  text-align: center;
+  ul {
+  	margin: 0;
+  	padding: 0;
+	list-style-type: none;
+  	list-style-image: none;
+  }
+  li {
+  	display: inline;
+  	margin-right: 5px;
+   
+  	a {
+  		text-decoration: none;
+  	}
+        a::after {
+		margin-left: 5px;
+		content: ' | ';
+        }
+        a:hover::after {
+  		color: #0088cc;
+	}
+   }
+   li:last-child a::after {
+  	content: '';
+   }
+}
+
+#footer_menu.container-full-width {
+    background: none repeat scroll 0 0 #283953;
+}
+#menu-footer-menu.menu li a:after {
+    content: "";
+    margin-left: 11px;
+}
+#navigation_menu{background: #2e435f;}
+.navbar-inverse .navbar-inner{background: #58c0d6;}
+.navbar-inverse .brand, .navbar-inverse .nav > li > a{color:#fff;}
+.navbar .nav > li:hover{background-color:#76d0e3;}
+.navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus{ background: #34a5bc;}
+
+.menu{
+    margin-left:0px;
+    li {
+    	    float: left;
+    	    position: relative;
+   	    list-style: none outside none;
+            height:15px;
+            a {
+    		color: #FFFFFF;
+    		display: block;
+   		font-family: 'helvetica-neue-lt-com-55-roman';
+		font-size: 12px;
+		padding: 0px 3px 3px 3px;
+		position: relative;
+		text-align: center;
+		text-decoration: none;
+		transition: all 0.25s ease 0s;
+             }
+            a:after {
+    		content: " | ";
+   		margin-left: 5px;
+		}
+     }
+     li:last-child{
+            background-image: none;
+    	    border-right: medium none;
+	    float: left;
+	    list-style-type: none;
+	    padding-right: 13px;
+		a:after {
+    		content: "";
+		}
+     }
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle{
+background:none !important;
+border:none !important;
+}
+.menu-primary-menu-container #menu-primary-menu li {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#sidebar .widget-container ul li {
+    border-bottom: 0 none;
+}
+.widget-container.widget_nav_menu li {
+    float: none;
+}
+.widget-container.widget_nav_menu li a {
+	text-align:left;
+}
+.widget-container.widget_nav_menu li a:after {
+    content: none;
+}

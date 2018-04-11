@@ -1,0 +1,47 @@
+### V 1.0.6
+    - Small CSS fix for comment bubbles
+    - Changelog update
+
+### V 1.0.5
+    - Removed commented out code
+    - Fixed 4 functions that were lacking proper escape functions
+    - Moved a function from header.php to functions.php (where it actually belongs)
+    - Made sure theme images are properly licensed in readme.txt
+    - Small updates to readme.txt
+    - Removed capitalization from the following files: readme.txt, changelog.txt & license.txt
+    - Changed description in style.css to better suit this theme
+    - Changed tags in style.css to better suit this theme
+
+### V 1.0.4
+    - Removed multiple text domains
+    - Replaced deprecated theme tags in style.css
+    - Added theme specific copyright message
+    - Added theme support for custom_logo
+
+
+### v1.0.3
+	- Has been moved navigation pagination before comment form.
+	- Has been fixed meta tags on responsive.
+	- Has been fixed sidebar button on responsive.
+
+### v1.0.2
+	- Has been decreased margin left on burger menu.
+	- Has been decreased font size on post meta.
+	- Has been decreased width & height on close icon from sidebar.
+
+### v1.0.1
+	- Has been added margins on fields from comemnt form.
+	- Has been fixed Cotent Width control from customizer.
+	- Has been fixed Copyright field control from customizer.
+	- Has been decreased width & height on social icons.
+	- Has been changed the border position on sidebar right.
+	- Has been added style on single and page.
+	- Has been removed title link from single.
+	- Has been fixed the scrollbar from sidebar.
+	- Has been added black overlay on featured image.
+	- Has been fixed the logo control from Customizer in live preview.
+	- Has been added font size 15 pixels on content.
+	- Has been added font size 35 pixels on post title.
+
+### v1.0.0
+	- Release.

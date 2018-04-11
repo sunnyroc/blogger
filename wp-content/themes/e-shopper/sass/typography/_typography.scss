@@ -1,0 +1,82 @@
+@font-face {
+    font-family:Museo500-Regular;
+    src: url('fonts/Museo500-Regular.otf'),
+	  url('fonts/Museo500-Regular.ttf') format('truetype'),
+	   url('fonts/Museo500-Regular.eot') format('embedded-opentype'),
+	    url('fonts/Museo500-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family:'helvetica-neue-lt-com-55-roman';
+    src: url('fonts/helvetica-neue-lt-com-55-roman.ttf') format('truetype'),
+		 url('fonts/helvetica-neue-lt-com-55-roman.otf'),
+		  url('fonts/helvetica-neue-lt-com-55-roman.eot') format('embedded-opentype'),
+		   url('fonts/helvetica-neue-lt-com-55-roman.woff') format('woff');
+	
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6{
+font-family:Museo500-Regular;
+color:#38414e
+}
+
+body {
+  color: #555555;
+  -ms-word-break: break-word;
+   word-break: break-word;
+}
+table .label {
+  padding: 7px;
+  background: none;
+  text-shadow: none;
+  line-height: normal;
+}
+pre {
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+code {
+  white-space: pre-wrap;
+}
+header#cc-header {
+
+  h2.site-title{
+      margin-bottom: 5px;
+      font-size: 38px;
+              a { color: #FFFFFF;}
+	      a:hover { text-decoration: none;}
+   }
+  h2.site-description {
+      margin: 0;
+      font-size: 14px;
+      color: #5AC3D9;
+  }
+  p {
+      font-size: 1.2em;
+  }
+}
+.glyphicon.glyphicon-shopping-cart{
+   color:#a7c23c;
+}
+ .glyphicon.glyphicon-remove{
+  color:#dddddd;
+}
+.glyphicon.glyphicon-plus {
+    float: right;
+    font-size: 11px;
+    font-weight: normal;
+    top: 5px;
+    display:none;	
+}
+.blog-description > p {
+    color: #5AC3D9;
+}
+#register .register {
+    color: #E9F0F4;
+}
+.contact_details {
+    color: #E9F0F4;
+}

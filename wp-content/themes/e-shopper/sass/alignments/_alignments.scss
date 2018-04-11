@@ -1,0 +1,30 @@
+.alignnone {
+  display: block;
+  margin: 5px 20px 20px 0;
+	height: auto;
+	max-width: 100%;
+}
+
+.aligncenter, div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+	clear:left;
+}
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+.site-footer #copyright {
+  float: right;
+  margin-left: 1em;
+  color: #fff;
+}
+.glyph{
+margin-right: 4px;
+}

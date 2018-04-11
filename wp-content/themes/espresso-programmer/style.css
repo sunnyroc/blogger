@@ -1,0 +1,489 @@
+/*
+Theme Name: Espresso Programmer
+Theme URI: https://espressoprogrammer.com/espresso-programmer-wp-theme
+Author: Vasile Boris
+Author URI: https://espressoprogrammer.com
+Description: Espresso programmer is a clean, responsive and mobile-ready WordPress theme.
+Version: 1.2
+License: GNU GPLv3
+License URI: http://www.gnu.org/copyleft/gpl.html
+Espresso Programmer, Copyright 2017 Vasile Boris
+Espresso Programmer is distributed under the terms of the GNU GPL
+Tags: two-columns, left-sidebar, grid-layout, custom-header, custom-menu, featured-images, blog
+Text Domain: espresso-programmer
+*/
+
+/* Base */
+:root {
+	--max-page-width: 960px;
+	--max-header-width: 940px;
+	--max-content-width: 700px;
+	--max-sidebar-width: 220px;
+	--max-footer-width: 940px;
+	--max-blog-info-width: var(--max-header-width);
+	--grid-elements-margin: 10px;
+	--elements-margin: 5px;
+	--elements-padding: 5px;
+	--logo-size: 100px;
+	--font-size: 16px;
+	--h6-size: calc(0.75 * var(--font-size));
+	--h5-size: calc(0.875 * var(--font-size));
+	--h4-size: var(--font-size);
+	--h3-size: calc(1.125 * var(--font-size));
+	--h2-size: calc(1.5 * var(--font-size));
+	--h1-size: calc(2 * var(--font-size));
+	--light-grey: #f5f5f5;
+	--grey: #999999;
+	--border: 4px solid var(--light-grey);
+	--light-border: 2px solid var(--light-grey);
+	--border-radius: 5px;
+	--quote-margin: 20px;
+	--quote-padding: 20px;
+	--quote-border: 4px solid var(--light-grey);
+	--section-border: 4px solid var(--light-grey);
+}
+
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+	font-size: var(--h1-size);
+}
+
+h2 {
+	font-size: var(--h2-size);
+}
+
+h3 {
+	font-size: var(--h3-size);
+}
+
+h4, body {
+	font-size: var(--h4-size);
+}
+
+h5 {
+	font-size: var(--h5-size);
+}
+
+h5 {
+	font-size: var(--h5-size);
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: 'Source Code Pro', monospace;
+	font-size: var(--font-size);
+	background: #eee;
+	word-wrap: break-word;
+}
+
+pre {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+blockquote {
+	margin-left: var(--quote-margin);
+	padding-left: var(--quote-padding);
+	border-left: var(--quote-border);
+}
+
+
+/* Layout */
+#page {
+	max-width: var(--max-page-width);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header {
+	max-width: var(--max-header-width);
+	margin: var(--grid-elements-margin);
+	float:left;
+	width: 100%;
+}
+
+#footer {
+	clear: both;
+	max-width: var(--max-footer-width);
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+
+/* Module */
+.posts {
+	float: right;
+	width: 100%;
+	max-width: var(--max-content-width);
+	margin: var(--grid-elements-margin);
+}
+
+.menu,
+.sidebar {
+	float: left;
+	width: 100%;
+	max-width: var(--max-sidebar-width);
+	margin: var(--grid-elements-margin);
+}
+
+.blog-header {
+}
+
+.blog-home {
+	float: left;
+	margin: var(--elements-margin) var(--elements-margin) 0 0;
+}
+
+.blog-name > a:link,
+.blog-name > a:visited {
+	color: black;
+}
+
+.blog-logo {
+	width: var(--logo-size);
+	height: var(--logo-size);
+}
+
+.blog-info {
+	float: left;
+	max-width: var(--max-blog-info-width);
+	margin-top: calc(var(--logo-size) / 2 - var(--h1-size) + var(--elements-margin));
+	text-align: left;
+}
+
+.blog-name {
+	margin-top: var(--elements-margin);
+	font-size: var(--h2-size);
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.blog-description {
+	margin-top: var(--elements-margin);
+}
+
+.menu-items {
+	list-style-type: none;
+	padding: 0;
+	text-align: right;
+}
+
+.menu-item {
+	margin: var(--elements-margin) 0;
+}
+
+.search-submit {
+	display: none;
+}
+
+.search-text {
+	width: 100%;
+	padding: var(--elements-padding);
+	border: none;
+}
+
+.search-text:focus {
+	outline: none;
+}
+
+.widget,
+.posts-search {
+	margin: var(--elements-margin) 0;
+	padding: var(--elements-padding);
+}
+
+.widget,
+.posts-search {
+	border: var(--border);
+	border-radius: var(--border-radius);
+}
+
+.widget.widget_categories label[for="cat"] {
+	display: none;
+}
+
+.widget.widget_categories #cat {
+	width: 100%;
+	margin: var(--elements-margin) 0;
+	border: none;
+	background-color: var(--light-grey);
+	padding: var(--elements-padding);
+}
+
+.widget-title {
+	text-transform: lowercase;
+	text-align: right;
+	margin: 0;
+}
+
+.menu > ul,
+.menu > ol,
+.widget > ul,
+.widget > ol {
+	margin: var(--elements-margin) 0;
+	padding: 0;
+}
+
+.widget li {
+	list-style-type: none;
+	text-align: right;
+	padding: var(--elements-padding) 0;
+}
+
+.tagcloud {
+	text-align: right;
+	margin-top: var(--elements-margin);
+}
+
+.textwidget {
+	text-align: right;
+}
+
+.textwidget > p {
+	margin: 0;
+}
+
+.posts-navigation,
+.post-navigation {
+	border-top: var(--section-border);
+}
+
+.posts-navigation-left,
+.posts-navigation-right,
+.post-navigation-left,
+.post-navigation-right,
+.comments-navigation-left,
+.comments-navigation-right {
+	text-transform: lowercase;
+	width: 50%;
+	color: var(--grey);
+	margin-bottom: var(--grid-elements-margin);
+}
+
+.posts-navigation-left,
+.post-navigation-left,
+.comments-navigation-left {
+	float: left;
+	text-align: left;
+}
+
+.posts-navigation-right,
+.post-navigation-right,
+.comments-navigation-right {
+	float: right;
+	text-align: right;
+}
+
+.post-image {
+	width: 100%;
+	height: auto;
+}
+
+.post-time {
+	color: var(--grey);
+	margin: var(--elements-margin) 0;
+}
+
+.post-content img {
+	max-width: 100%;
+}
+
+.post-meta {
+	border-top: var(--section-border);
+}
+
+.post-pagination,
+.post-categories,
+.post-tags {
+	margin: var(--elements-margin) 0;
+}
+
+.post-pagination-title,
+.post-categories-title,
+.post-tags-title {
+	text-transform: lowercase;
+	color: var(--grey);
+}
+
+.comments {
+	clear: both;
+}
+
+.comments-title {
+	margin-top: var(--elements-margin);
+	text-align: right;
+	color: var(--grey);
+	border-bottom: var(--border);
+}
+
+.comment {
+	list-style-type: none;
+	margin: var(--elements-margin) 0;
+	padding: var(--elements-padding) 0;
+}
+
+.comment-author {
+	float: left;
+}
+
+.comment-author > .says {
+	display: none;
+}
+
+.comment-meta {
+	float: right;
+	text-align: right;
+}
+
+.comment-meta > a {
+	color: var(--grey);
+}
+
+.comment-body > p {
+	float: left;
+	width: 100%;
+	padding: var(--elements-padding) 0;
+}
+
+.comment-respond {
+	clear: both;
+}
+
+.reply {
+	clear: both;
+	border-bottom: var(--border);
+}
+
+.children {
+	clear: both;
+}
+
+/* The following are required but I did not find a usage in my case yet */
+.wp-caption,
+.wp-caption .wp-caption-text,
+.sticky,
+.screen-reader-text,
+.gallery-caption,
+.bypostauthor,
+.alignright,
+.alignleft,
+.aligncenter {
+
+}
+
+
+@media only screen and (max-width: 991px) {
+	/* Base */
+	:root {
+		--max-page-width: 960px;
+		--max-header-width: 940px;
+		--max-sidebar-width: 940px;
+		--max-content-width: 940px;
+		--max-footer-width: 940px;
+		--max-blog-info-width: var(--max-sidebar-width);
+	}
+
+
+	/* Layout */
+	#page {
+		padding: 0 var(--elements-padding) 0 var(--elements-padding);
+	}
+
+	#header {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	/* Module */
+	.blog-header {
+		float: none;
+	}
+
+	.blog-home {
+		float: left;
+	}
+
+	.blog-info {
+		float: left;
+		max-width: calc(var(--max-blog-info-width) - var(--logo-size));
+		text-align: left;
+	}
+
+	.menu-items,
+	.widget-title,
+	.tagcloud,
+	.textwidget,
+	.widget li {
+		text-align: left;
+	}
+
+	.posts {
+		float: none;
+		max-width: var(--max-content-width);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.menu,
+	.sidebar {
+		float: none;
+		clear: both;
+		max-width: var(--max-sidebar-width);
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+@media only screen and (max-width: 480px) {
+	/* Base */
+	:root {
+		--max-page-width: 480px;
+		--max-header-width: 460px;
+		--max-sidebar-width: 460px;
+		--max-content-width: 460px;
+		--max-footer-width: 460px;
+		--max-blog-info-width: 300px;
+	}
+
+
+	/* Module */
+	.blog-info {
+		max-width: calc(var(--max-blog-info-width) - var(--logo-size));
+		margin-top: 0;
+	}
+
+	.comment-meta {
+		float: left;
+		margin-top: var(--elements-margin);
+		text-align: left;
+	}
+}
